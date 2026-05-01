@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcqbri6qa8df3"
-path="res://.godot/imported/tile_0001.png-08711b7941f81a55237f16df54fb2876.ctex"
+uid="uid://bvc8ry5sd0815"
+path="res://.godot/imported/buffalo.png-b6f037f9f87099cfd4a944d197ee1b8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/tile_0001.png"
-dest_files=["res://.godot/imported/tile_0001.png-08711b7941f81a55237f16df54fb2876.ctex"]
+source_file="res://assets/characters/buffalo.png"
+dest_files=["res://.godot/imported/buffalo.png-b6f037f9f87099cfd4a944d197ee1b8a.ctex"]
 
 [params]
 

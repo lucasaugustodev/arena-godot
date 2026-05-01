@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxrwi35p0pq0n"
-path="res://.godot/imported/tile_0023.png-82f4206b1bfec658d775e1654d51a9ec.ctex"
+uid="uid://bhd7rfplyhcxf"
+path="res://.godot/imported/snake.png-779fd41887d06facb98bdd50e1b89d77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/tile_0023.png"
-dest_files=["res://.godot/imported/tile_0023.png-82f4206b1bfec658d775e1654d51a9ec.ctex"]
+source_file="res://assets/characters/snake.png"
+dest_files=["res://.godot/imported/snake.png-779fd41887d06facb98bdd50e1b89d77.ctex"]
 
 [params]
 

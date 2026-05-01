@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn7420tionn1k"
-path="res://.godot/imported/tile_0009.png-ed8839106dd7a921c4452236c77d7c7f.ctex"
+uid="uid://ra2l848evafg"
+path="res://.godot/imported/gorilla.png-9e32f155642958bd44cfe713a8ebe0db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/tile_0009.png"
-dest_files=["res://.godot/imported/tile_0009.png-ed8839106dd7a921c4452236c77d7c7f.ctex"]
+source_file="res://assets/characters/gorilla.png"
+dest_files=["res://.godot/imported/gorilla.png-9e32f155642958bd44cfe713a8ebe0db.ctex"]
 
 [params]
 
