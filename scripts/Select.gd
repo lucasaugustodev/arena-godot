@@ -117,7 +117,7 @@ func _draw_grid():
 		draw_rect(r, border_color, false, 3)
 
 		# Sprite
-		var tex = load("res://assets/characters/" + b.file)
+		var tex = load("res://assets/characters/" + b.folder + "/idle.png")
 		if tex:
 			var sprite_size = Vector2(72, 72)
 			var sprite_pos = r.position + Vector2(14, 16)
@@ -168,7 +168,7 @@ func _draw_slot(pos: Vector2, sz: Vector2, label: String, color: Color, bicho_id
 	draw_string(font, pos + Vector2(10, 18), label, HORIZONTAL_ALIGNMENT_LEFT, -1, 12, color)
 	if bicho_id != "":
 		var b = Bichos.get_by_id(bicho_id)
-		var tex = load("res://assets/characters/" + b.file)
+		var tex = load("res://assets/characters/" + b.folder + "/idle.png")
 		if tex:
 			draw_texture_rect(tex, Rect2(pos + Vector2(10, 24), Vector2(48, 48)), false)
 		var name_size = font.get_string_size(b.name, HORIZONTAL_ALIGNMENT_RIGHT, -1, 18)
