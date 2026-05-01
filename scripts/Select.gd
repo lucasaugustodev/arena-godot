@@ -62,7 +62,18 @@ func _fight_button_rect() -> Rect2:
 	return Rect2(size.x / 2 - 130, size.y - 70, 260, 50)
 
 func _draw():
-	# Background gradient is handled by ColorRect in scene; we only draw widgets.
+	# Background gradient
+	for i in range(40):
+		var ratio = float(i) / 40.0
+		var c = Color("#0a0a18").lerp(Color("#1a0a30"), ratio)
+		draw_rect(Rect2(0, i * size.y / 40.0, size.x, size.y / 40.0 + 1), c)
+	# Subtle red glow top-left + purple bottom-right (like CSS radial gradients)
+	for i in range(30):
+		var t = float(i) / 30.0
+		var radius = 200 + i * 12
+		draw_circle(Vector2(size.x * 0.3, size.y * 0.3), radius, Color(0.5, 0.13, 0.13, 0.02 * (1.0 - t)))
+		draw_circle(Vector2(size.x * 0.7, size.y * 0.8), radius, Color(0.27, 0.13, 0.5, 0.02 * (1.0 - t)))
+
 	_draw_title()
 	_draw_grid()
 	_draw_vs_panel()

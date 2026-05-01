@@ -173,11 +173,12 @@ func _draw():
 		_draw_winner()
 
 func _draw_arena_bg(shake_off: Vector2):
-	# Sky gradient (top half)
-	for i in range(20):
-		var y = i * size.y / 40.0
-		var c = Color("#3a2018").lerp(Color("#7a3818"), float(i) / 20.0)
-		draw_rect(Rect2(0 + shake_off.x, y + shake_off.y, size.x, size.y / 40.0 + 1), c)
+	# Sky gradient (full height down to floor)
+	var sky_h = FLOOR_Y
+	for i in range(40):
+		var y = i * sky_h / 40.0
+		var c = Color("#3a2018").lerp(Color("#7a3818"), float(i) / 40.0)
+		draw_rect(Rect2(0 + shake_off.x, y + shake_off.y, size.x, sky_h / 40.0 + 1), c)
 	# Ground
 	draw_rect(Rect2(0 + shake_off.x, FLOOR_Y + shake_off.y, size.x, size.y - FLOOR_Y), Color("#1a0a06"))
 	# Tile floor pattern (using kenney brick tile if available)
