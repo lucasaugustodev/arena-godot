@@ -1,4 +1,4 @@
-extends Node
+extends Control
 
 # Root scene controller — switches between Select and Arena.
 
